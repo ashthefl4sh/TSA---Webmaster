@@ -8,15 +8,6 @@ window.addEventListener('scroll', () => {
   document.body.style.backgroundPosition = `${posX}% ${posY}%`;
 });
 
-document.getElementById('scroll-link').addEventListener('click', (e) => {
-  e.preventDefault(); // stop the page from jumping instantly
-  const section = document.getElementsByClassName('in-page-section')[0];
-  section.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
-});
-
 // --- Fade-in on scroll ---
 const fadeSections = document.querySelectorAll('.fade-section');
 const observer = new IntersectionObserver((entries) => {
