@@ -8,6 +8,11 @@ window.addEventListener('scroll', () => {
   document.body.style.backgroundPosition = `${posX}% ${posY}%`;
 });
 
+window.addEventListener('click', () => {
+  const scrollSection = document.getElementByClassName('');
+  const targetScrollSection = scrollSection.scrollIntoView('smooth');
+}
+
 // --- Fade-in on scroll ---
 const fadeSections = document.querySelectorAll('.fade-section');
 const observer = new IntersectionObserver((entries) => {
