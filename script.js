@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('click', () => {
-  const scrollSection = document.getElementByClassName('');
+  const scrollSection = document.getElementByClassName('in-page-section');
   const targetScrollSection = scrollSection.scrollIntoView('smooth');
 }
 
